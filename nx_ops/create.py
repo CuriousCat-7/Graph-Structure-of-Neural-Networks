@@ -8,7 +8,7 @@ def _dump(f, path, overwrite):
         logger.warning("{} already exists", path)
         return
     logger.info(path)
-    f().to_csv(path, compression="gz")
+    f().to_csv(path, compression="gzip")
 
 
 def create_all(save_root="save/csv/", overwrite=False):
