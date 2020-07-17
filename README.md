@@ -14,3 +14,9 @@ https://arxiv.org/abs/2007.06559
   - [ ] Train/Eval on cifar10
   - [ ] Train/Eval on ImageNet
 - [ ] Analyze
+
+## Graph
+Sample
+```bash
+python -m nx_ops.create create_all
+```
