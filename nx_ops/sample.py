@@ -30,7 +30,7 @@ def sample_ws(n=64, k_max=62, k_min=8, p_num=300, seed_num=30) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def sample_ba(n, m_max=30, m_min=4, seed_num=300):
+def sample_ba(n=64, m_max=30, m_min=4, seed_num=300):
     rows = []
     pbar = tqdm(total=int(m_max-m_min)*seed_num)
     for m in np.arange(m_min, m_max):
