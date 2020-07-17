@@ -11,7 +11,7 @@ def watts_strogatz_flexible_graph(n, k, p, seed=None):
     ----------
     n : int
         The number of nodes
-    k : int
+    k : float or int
         Each node is joined with its `k` nearest neighbors in a ring
         topology.
     p : float
