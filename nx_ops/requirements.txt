@@ -1,0 +1,5 @@
+networkx==2.4
+pandas
+fire
+loguru
+numpy
