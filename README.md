@@ -17,7 +17,7 @@ https://arxiv.org/abs/2007.06559
 
 ## Graph
 ### Graph Generator
-![cluster coefficient and average path length](./figures/all_path_cluster.png)
+![cluster coefficient and average path length](./figures/all_path_cluster.png) ![WS-Flex cluster coefficient and average path length](./figures/ws-flex_path_cluster.png) 
 1. Generate Graphs
 ```bash
 python -m nx_ops.create create_all
