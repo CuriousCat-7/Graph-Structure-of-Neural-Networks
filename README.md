@@ -28,6 +28,6 @@ Use pandas and draw graphs by ipython, like:
 ```python
 import pandas
 from matplotlib import pyplot as plt
-df_ws = pd.read_csv("save/ws_path_cluster.png")
+df_ws = pd.read_csv("save/csv/ws-paper.csv.gz")
 df_ws.dropna().sample(4000).plot.scatter("cluster_coefficient", "avg_path_length",alpha=0.25, color="yellow", ax=ax, label="WS")
 ```
