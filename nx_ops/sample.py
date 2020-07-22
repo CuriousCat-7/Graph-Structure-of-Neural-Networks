@@ -5,12 +5,23 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import fire
+from loguru import logger
 
 
 def get_avg_cluater_path(g: nx.Graph) -> dict:
+    try:
+        cc = nx.average_clustering(g)
+    except nx.NetworkXError as e:
+        logger.warning(e)
+        cc = np.nan
+    try:
+        apl = nx.average_shortest_path_length(g)
+    except nx.NetworkXError as e:
+        logger.warning(e)
+        apl = np.nan
     return dict(
-        cluster_coefficient=nx.average_clustering(g),
-        avg_path_length=nx.average_shortest_path_length(g)
+        cluster_coefficient=cc,
+        avg_path_length=apl,
     )
 
 
